@@ -4,9 +4,9 @@ const body_parser=require('body-parser');
 const app=express();
 app.use(body_parser.urlencoded({'extended':false}));
 app.use('/add-product',(req,res,next)=>{
-    res.send('<form action="/product" method="POST"><input type="text" name="title"></input><button type="submit">add product</button></form>');
+    res.send('<form action="/product" method="POST"><label>Enter product name:<label/><input type="text" name="title"></input><br><label>Enter product size</label><input type="text" name="product_size"></input><br><button type="submit">add product</button></form>');
 });
-app.use('/product',(req,res,next)=>
+app.post('/product',(req,res,next)=>
 {
     console.log(req.body);
     res.redirect('/');
