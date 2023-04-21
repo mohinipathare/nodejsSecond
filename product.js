@@ -16,6 +16,11 @@ const Product=sequelize.define('product',{
   imageUrl:{
     type:Sequelize.STRING,
     allowNull:false
+  },
+  description:{
+    type:Sequelize.STRING,
+    allowNull:false
   }
+
 });
 module.exports=Product;
