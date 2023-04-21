@@ -1,1 +1,1 @@
-{"products":[{"id":"456677","qty":3},{"id":"0.001316068737733378","qty":1}],"totalPrice":547}
+{"products":[{"id":"456677","qty":3},{"id":"0.001316068737733378","qty":1},{"id":"function random() { [native code] }","qty":2}],"totalPrice":1447}
